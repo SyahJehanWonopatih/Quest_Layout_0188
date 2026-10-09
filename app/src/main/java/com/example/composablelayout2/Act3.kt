@@ -17,7 +17,16 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
-
+import androidx.compose.ui.res.painterResource
+import com.example.composablelayout2.R
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 
 @Composable
 fun ActivitasPertama(modifier: Modifier) {
@@ -25,6 +34,13 @@ fun ActivitasPertama(modifier: Modifier) {
         modifier = Modifier.padding(top = 100.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
-    ) 
+    ) {
+        Text(
+            stringResource(R.string.Prodi),
+            fontSize = 35.sp,
+            fontWeight = FontWeight.Bold
+        )
 
+        }
+    }
 }
